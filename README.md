@@ -1,5 +1,7 @@
 Performance Optimization of Power BI Solution
+
 <span style="font-size:20px;">Objective:</span>
+
 <span style="font-size:16px;">Enhance the performance and scalability of an existing Power BI solution to ensure faster data processing and accommodate growing data volumes.</span>
 
 <span style="font-size:20px;">Key Actions:</span>
