@@ -1,55 +1,41 @@
 # Performance Optimization of Power BI Solution
 
+  - Performance Optimization in Your Data Model
+
 ## Objective:
-Enhance the performance and scalability of an existing Power BI solution to ensure faster data processing and accommodate growing data volumes.
+- Transform flat files into a star schema to significantly enhance the performance and scalability of an existing Power BI solution. This improvement ensures faster data processing and accommodates growing data volumes efficiently.
 
-## Key Actions:
+## Key Improvements
 
-1. **Indexing Strategies**:
-    - Implemented appropriate indexing strategies to accelerate query performance.
-    - Created the right indexes to speed up queries and improve app performance.
-    - Used numeric IDs instead of text IDs to leverage the efficiency of numeric fields in storage, processing speed, and query execution.
+### Data Modelling
+- Built robust table relationships and designed a star schema to streamline data processing and improve query performance.
 
-2. **Comprehensive Analysis**:
-    - Conducted a comprehensive analysis of existing Power BI reports and datasets.
-    - Identified performance bottlenecks and addressed them to enhance overall performance.
+### Performance Optimization
+- Created the index numbers instead of using customer IDs as text to speed up queries and improve app performance. This approach leverages the efficiency of numeric fields in storage, processing speed, and query execution.
 
-3. **Execution Engine and Query Operators**:
-    - Analyzed the Power BI execution engine and query operators.
-    - Optimized their use in report generation to ensure efficient performance.
+##🌟Using numeric IDs instead of text IDs in a data model can significantly improve performance and efficiency. Here are some reasons why numeric IDs are preferred:
 
-4. **Cardinality Estimation Errors**:
-    - Detected and fixed cardinality estimation errors.
-    - Examined query optimizer statistics to identify and correct estimation errors.
+### Database and Model Optimization
+- **Optimized Algorithms**: Many database engines and BI tools are optimized for numeric operations, meaning they can perform more efficiently on numeric data types.
 
-5. **Plan Caching and Reuse**:
-    - Monitored query execution plans.
-    - Promoted caching and reuse to improve performance.
+### Processing Speed
+- **Join Operations**: When performing joins between tables, using numeric keys can significantly speed up the process as numeric comparisons are faster than string comparisons.
+- **Aggregations and Calculations**: Operations such as aggregations and calculations are faster on numeric fields compared to text fields.
 
-6. **Query Store**:
-    - Utilized the Query Store.
-    - Troubleshot performance issues and enhanced query efficiency.
+### Performance and Storage Efficiency
+- **Storage Size**: Numeric fields generally require less storage space compared to text fields. For instance, an integer field takes up 4 bytes of storage, whereas a text field can take up much more depending on the length of the text.
+- **Indexing Speed**: Numeric fields are faster to index. Indexes created on numeric fields consume less storage and are quicker to read and write compared to text indexes.
+- **Query Execution**: Queries involving numeric fields are executed faster than those involving text fields. This is because numerical comparisons and operations are computationally less intensive than string comparisons.
 
-7. **Columnstore Indexes**:
-    - Applied columnstore indexing.
-    - Improved the performance of large data warehouse queries.
+### Memory Usage
+- **Memory Efficiency**: Numeric fields use less memory than text fields, which can lead to more efficient memory usage, especially when dealing with large datasets.
 
-8. **Query Processor Limitations**:
-    - Handled query processor limitations.
-    - Used hints and advanced optimization techniques to address limitations.
+### Data Integrity and Consistency
+- **Uniqueness and Simplicity**: Numeric IDs ensure uniqueness and are simple to generate. They avoid issues like case sensitivity and leading/trailing spaces that can occur with text fields.
+- **Consistent Formatting**: Numeric fields maintain a consistent format, whereas text fields might have variations (e.g., "123" vs. "00123") that can lead to inconsistencies.
+  
+### Optimized DAX Measures**:
+- Developed and optimized DAX (Data Analysis Expressions) measures and calculations.
+- Ensured efficient use of resources.
 
-9. **Incremental Data Refresh**:
-    - Configured incremental data refresh settings.
-    - Improved load times for large datasets.
 
-10. **Optimized DAX Measures**:
-    - Developed and optimized DAX (Data Analysis Expressions) measures and calculations.
-    - Ensured efficient use of resources.
-
-11. **Power BI Service Features**:
-    - Enabled and configured Power BI service features.
-    - Automatic page refresh and scheduled data refreshes maintained up-to-date reports without manual intervention.
-
-12. **Stakeholder Collaboration**:
-    - Worked closely with stakeholders.
-    - Understood reporting requirements and ensured the solution met business needs while maintaining high performance.
