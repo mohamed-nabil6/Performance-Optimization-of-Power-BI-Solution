@@ -13,7 +13,7 @@
 ### Performance Optimization
 - Created the index numbers instead of using customer IDs as text to speed up queries and improve app performance. This approach leverages the efficiency of numeric fields in storage, processing speed, and query execution.
 
-##🌟Using numeric IDs instead of text IDs in a data model can significantly improve performance and efficiency. Here are some reasons why numeric IDs are preferred:
+### 🌟Using numeric IDs instead of text IDs in a data model can significantly improve performance and efficiency. Here are some reasons why numeric IDs are preferred:
 
 ### Database and Model Optimization
 - **Optimized Algorithms**: Many database engines and BI tools are optimized for numeric operations, meaning they can perform more efficiently on numeric data types.
