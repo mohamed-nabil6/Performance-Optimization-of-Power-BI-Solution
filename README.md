@@ -38,4 +38,5 @@
 - Developed and optimized DAX (Data Analysis Expressions) measures and calculations.
 - Ensured efficient use of resources.
 
+![Screenshot_2](https://github.com/user-attachments/assets/f1ae4f1f-de66-422d-96a3-b126e4eda9f7)
 
